@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="KetQuaBLL.cs" />
     <Compile Include="KhoaBLL.cs" />
     <Compile Include="MonBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
