@@ -28,5 +28,13 @@ namespace GUI
             dgvKhoa.DataSource = kBLL.getListKhoa();
             Console.WriteLine(1);
         }
+
+        private void dgvKhoa_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int i = dgvKhoa.CurrentRow.Index;
+            txtMaKhoa.Text = dgvKhoa.Rows[i].Cells[0].Value.ToString();
+            txtTenKhoa.Text = dgvKhoa.Rows[i].Cells[1].Value.ToString();
+
+        }
     }
 }

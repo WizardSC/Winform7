@@ -35,7 +35,7 @@ namespace DAL
             }
             finally
             {
-                Disconnect();
+                //Disconnect();
             }
         }
     }
