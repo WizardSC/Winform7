@@ -49,5 +49,12 @@ namespace GUI
             mon_BLL.insertMonHoc(model_mon);
             init();
         }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtMa.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            txtSoTiet.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            txtTen.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+        }
     }
 }
