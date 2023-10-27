@@ -27,5 +27,16 @@ namespace GUI
             khoaGUI.FormBorderStyle = FormBorderStyle.FixedSingle; // Loại bỏ viền trên form con (nếu cần)
             khoaGUI.Show();
         }
+
+        private void btnNhapDiem_Click(object sender, EventArgs e)
+        {
+            NhapDiemGUI nhapDiemGUI = new NhapDiemGUI();
+            nhapDiemGUI.TopLevel = false; // Đặt TopLevel thành false để làm cho form con
+            nhapDiemGUI.Parent = pnMain; // Thiết lập form cha là pnMain
+            pnMain.Controls.Add(nhapDiemGUI); // Thêm form con vào Controls của pnMain
+            nhapDiemGUI.ControlBox = true; // Cho phép hiển thị ControlBox trên form con
+            nhapDiemGUI.FormBorderStyle = FormBorderStyle.FixedSingle; // Loại bỏ viền trên form con (nếu cần)
+            nhapDiemGUI.Show();
+        }
     }
 }

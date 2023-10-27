@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,21 +11,23 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class SinhVienGUI : Form
+    public partial class NhapDiemGUI : Form
     {
-        public SinhVienGUI()
+        private KetQuaBLL kqBLL;
+        public NhapDiemGUI()
         {
             InitializeComponent();
+            kqBLL = new KetQuaBLL();
         }
 
-        private void textBox5_TextChanged(object sender, EventArgs e)
+        private void btnThem_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        private void loadToCBXMaSo()
         {
-            dateTimePicker1.CustomFormat = "dd-MM-yyyy";
+
         }
     }
 }

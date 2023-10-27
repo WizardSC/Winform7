@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtMaKhoa = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTenKhoa = new System.Windows.Forms.TextBox();
             this.dgvKhoa = new System.Windows.Forms.DataGridView();
             this.MaKhoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenKhoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,18 +61,18 @@
             // txtMaKhoa
             // 
             this.txtMaKhoa.Location = new System.Drawing.Point(156, 54);
-            this.txtMaKhoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaKhoa.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaKhoa.Name = "txtMaKhoa";
             this.txtMaKhoa.Size = new System.Drawing.Size(205, 22);
             this.txtMaKhoa.TabIndex = 2;
             // 
-            // textBox1
+            // txtTenKhoa
             // 
-            this.textBox1.Location = new System.Drawing.Point(156, 112);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(205, 22);
-            this.textBox1.TabIndex = 3;
+            this.txtTenKhoa.Location = new System.Drawing.Point(156, 112);
+            this.txtTenKhoa.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTenKhoa.Name = "txtTenKhoa";
+            this.txtTenKhoa.Size = new System.Drawing.Size(205, 22);
+            this.txtTenKhoa.TabIndex = 3;
             // 
             // dgvKhoa
             // 
@@ -81,7 +81,7 @@
             this.MaKhoa,
             this.TenKhoa});
             this.dgvKhoa.Location = new System.Drawing.Point(-7, 183);
-            this.dgvKhoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvKhoa.Margin = new System.Windows.Forms.Padding(4);
             this.dgvKhoa.Name = "dgvKhoa";
             this.dgvKhoa.RowHeadersWidth = 51;
             this.dgvKhoa.Size = new System.Drawing.Size(509, 203);
@@ -110,11 +110,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(500, 378);
             this.Controls.Add(this.dgvKhoa);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTenKhoa);
             this.Controls.Add(this.txtMaKhoa);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "KhoaGUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "KhoaGUI";
@@ -130,7 +130,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtMaKhoa;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTenKhoa;
         private System.Windows.Forms.DataGridView dgvKhoa;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaKhoa;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenKhoa;
