@@ -10,6 +10,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{ADFFA46C-5942-4FAA-9032-D61AA5506ED5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "GUI\GUI.csproj", "{C5E58FD2-2D4B-4F8A-8F21-11B12A40344B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F3E58E7B-682B-4EC1-8DD4-E41D5B871DA1} = {F3E58E7B-682B-4EC1-8DD4-E41D5B871DA1}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
