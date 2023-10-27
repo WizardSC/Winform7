@@ -13,7 +13,7 @@ namespace DAL
         public DataTable getKetQua_DAL()
         {
             sql.openConnectToMySql();
-            string query = "select nhanvien.idnhanvien,nhanvien.tennhanvien,nhanvien.diachi,chucvu.tenchucvu from nhanvien,chucvu where nhanvien.idchucvu = chucvu.idchucvu";
+            string query = "select ketqua.idnhanvien,nhanvien.tennhanvien,nhanvien.diachi,chucvu.tenchucvu from nhanvien,chucvu where nhanvien.idchucvu = chucvu.idchucvu";
 
             MySqlCommand cmd = new MySqlCommand(query, sql.getConnection());
             MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
