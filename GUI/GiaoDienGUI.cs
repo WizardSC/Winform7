@@ -16,5 +16,16 @@ namespace GUI
         {
             InitializeComponent();
         }
+
+        private void btnKhoa_Click(object sender, EventArgs e)
+        {
+            KhoaGUI khoaGUI = new KhoaGUI();
+            khoaGUI.TopLevel = false; // Đặt TopLevel thành false để làm cho form con
+            khoaGUI.Parent = pnMain; // Thiết lập form cha là pnMain
+            pnMain.Controls.Add(khoaGUI); // Thêm form con vào Controls của pnMain
+            khoaGUI.ControlBox = true; // Cho phép hiển thị ControlBox trên form con
+            khoaGUI.FormBorderStyle = FormBorderStyle.FixedSingle; // Loại bỏ viền trên form con (nếu cần)
+            khoaGUI.Show();
+        }
     }
 }
