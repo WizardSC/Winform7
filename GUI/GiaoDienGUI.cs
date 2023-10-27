@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class Form2 : Form
+    public partial class GiaoDienGUI : Form
     {
-        public Form2()
+        public GiaoDienGUI()
         {
             InitializeComponent();
         }
