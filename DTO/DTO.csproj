@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="KetQua_DTO.cs" />
+    <Compile Include="KhoaDTO.cs" />
     <Compile Include="Mon_DTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SinhVienDTO.cs" />

@@ -14,7 +14,7 @@ namespace BLL
         public KetQuaBLL() { 
             kqDAL = new KetQuaDAL();
         }
-        public bool insertKetQua(KetQua_DTO kq)
+        public bool insertKetQua(KetQuaDTO kq)
         {
             return kqDAL.insertKetQua(kq);
         }

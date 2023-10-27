@@ -10,7 +10,7 @@ namespace DAL
 {
     public class KetQuaDAL : MSSQLConnect
     {
-        public bool insertKetQua(KetQua_DTO kq)
+        public bool insertKetQua(KetQuaDTO kq)
         {
             try
             {
