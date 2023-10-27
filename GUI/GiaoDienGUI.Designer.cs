@@ -89,6 +89,7 @@
             this.hệThốngToolStripMenuItem.Name = "hệThốngToolStripMenuItem";
             this.hệThốngToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.hệThốngToolStripMenuItem.Text = "Hệ thống";
+            this.hệThốngToolStripMenuItem.Click += new System.EventHandler(this.hệThốngToolStripMenuItem_Click);
             // 
             // chứcNăngToolStripMenuItem
             // 
@@ -130,6 +131,7 @@
             this.btnOpenSinhVien.Size = new System.Drawing.Size(100, 37);
             this.btnOpenSinhVien.Text = "Sinh viên";
             this.btnOpenSinhVien.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnOpenSinhVien.Click += new System.EventHandler(this.btnOpenSinhVien_Click);
             // 
             // btnKhoa
             // 
@@ -205,6 +207,7 @@
             this.ClientSize = new System.Drawing.Size(1140, 700);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "GiaoDienGUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
