@@ -16,7 +16,9 @@ namespace GUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MonGUI());
+
+            Application.Run(new GiaoDienGUI());
+
         }
     }
 }
