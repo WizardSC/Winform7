@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class Mon_DTO
+    public class MonDTO
     {
         private string maMH;
         private string tenMH;
         private int soTiet;
-        public Mon_DTO() { }
+        public MonDTO() { }
 
-        public Mon_DTO(string maMH, string tenMH, int soTiet)
+        public MonDTO(string maMH, string tenMH, int soTiet)
         {
             this.maMH = maMH;
             this.tenMH = tenMH;

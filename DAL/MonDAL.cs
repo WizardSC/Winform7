@@ -9,23 +9,20 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class MonHoc_DAL : MSSQLConnect
+    public class MonDAL : MSSQLConnect
     {
-
-        public DataTable getMH_DAL()
-        {
+        public DataTable getListMon() {
             DataTable dt = new DataTable();
             try
             {
                 Connect();
                 SqlCommand cmd = new SqlCommand();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "select * from Mon";
+                cmd.CommandText = "select * from mon";
                 cmd.Connection = conn;
                 SqlDataAdapter adt = new SqlDataAdapter(cmd);
                 adt.Fill(dt);
             }
-
             catch (Exception ex)
             {
                 return null;
@@ -35,21 +32,20 @@ namespace DAL
                 Disconnect();
             }
             return dt;
-
         }
-        public bool insert_MonHoc(Mon_DTO mon_DTO)
+        public bool insertMonHoc(MonDTO mon_DTO)
         {
 
             try
             {
                 MSSQLConnect dbConnect = new MSSQLConnect();
                 dbConnect.Connect();
-                string query = "INSERT INTO Mon(MaMH,TenMH,SoTiet) VALUES(@MaMH,@TenMH,@SoTiet)";
+                string query = "INSERT INTO Mon VALUES(@MaMH,@TenMH,@SoTiet)";
                 SqlCommand cmd = new SqlCommand(query, dbConnect.conn);
 
-                cmd.Parameters.AddWithValue("@MaMH", mon_DTO.MaMH);
-                cmd.Parameters.AddWithValue("@TenMH", mon_DTO.TenMH);
-                cmd.Parameters.AddWithValue("@SoTiet", mon_DTO.SoTiet);
+                cmd.Parameters.AddWithValue("@MaMH", mon_DTO.MaMH).SqlDbType = System.Data.SqlDbType.NChar;
+                cmd.Parameters.AddWithValue("@TenMH", mon_DTO.TenMH).SqlDbType = SqlDbType.NChar;
+                cmd.Parameters.AddWithValue("@SoTiet", mon_DTO.SoTiet).SqlDbType = SqlDbType.Int;
                 cmd.ExecuteReader();
                 return true;
 
@@ -57,6 +53,8 @@ namespace DAL
             }
             catch (Exception e)
             {
+                Console.WriteLine("Lỗi: " + e.Message);
+
                 return false;
             }
             finally

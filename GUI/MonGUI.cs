@@ -56,5 +56,19 @@ namespace GUI
             txtSoTiet.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             txtTen.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
         }
+        private void refreshValue()
+        {
+            txtMaMH.Text = "";
+            txtTenMH.Text = "";
+            txtSoTiet.Text = "";
+        }
+        private void dgvMon_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int i = dgvMon.CurrentRow.Index;
+            txtMaMH.Text = dgvMon.Rows[i].Cells[i].Value.ToString();
+            txtTenMH.Text = dgvMon.Rows[i].Cells[i].Value.ToString();
+            txtSoTiet.Text = dgvMon.Rows[i].Cells[i].Value.ToString();
+
+        }
     }
 }

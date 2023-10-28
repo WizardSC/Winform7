@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class KetQua_DTO
+    public class KetQuaDTO
     {
         private int maSo;
         private string maMH;
         private int Diem;
-        public KetQua_DTO() { }
+        public KetQuaDTO() { }
 
-        public KetQua_DTO(int maSo, string maMH, int Diem)
+        public KetQuaDTO(int maSo, string maMH, int Diem)
         {
             this.maSo = maSo;
             this.maMH = maMH;

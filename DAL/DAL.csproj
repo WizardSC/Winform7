@@ -42,7 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="MonHoc_DAL.cs" />
+    <Compile Include="KetQuaDAL.cs" />
+    <Compile Include="KhoaDAL.cs" />
+    <Compile Include="MonDAL.cs" />
     <Compile Include="MSSQLConnect.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SinhVienDAL.cs" />
